@@ -150,49 +150,22 @@ h3{ font-size: var(--fs-h3)}
 
 /* header */
 
-/*
-header {
-    display: inline-block;
-    justify-content: space-between;
-    padding: 1em;
-} */
-
-/*
-.logo {
-    max-width: 100px;
-} */
-
-/* NAVIGATION PT 2 */
-/* Add a black background color to the top navigation */
-
-
-/*
-=====
-DEPENDENCES
-=====
-*/
 
 .r-link{
     display: var(--rLinkDisplay, inline-flex) !important;
-  }
+}
   
-  .r-link[href]{
+.r-link[href]{
     color: var(--rLinkColor) !important;
     text-decoration: var(--rLinkTextDecoration, none) !important;
-  }
+}
   
-  .r-list{
+.r-list{
     padding-left: var(--rListPaddingLeft, 0) !important;
     margin-top: var(--rListMarginTop, 0) !important;
     margin-bottom: var(--rListMarginBottom, 0) !important;
     list-style: var(--rListListStyle, none) !important;
-  }
-
-  /*
-  =====
-  CORE STYLES
-  =====
-  */
+}
   
   .menu{
     --rLinkColor: var(--menuLinkColor, currentColor);
@@ -333,23 +306,9 @@ DEPENDENCES
     margin: 1rem auto;
   }
 
-  .menuIcon1{
-    position: relative;
-    left: 590%;
-    padding-bottom: 35px;
-  }
+  
 
-  .menuIcon2{
-    position: relative;
-    left: 605%;
-    padding-bottom: 35px;
-  }
-
-  .menuIcon3{
-    position: relative;
-    left: 620%;
-    padding-bottom: 35px;
-  }
+  
   
   .r-link{
       --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
@@ -360,6 +319,14 @@ DEPENDENCES
       color: var(--uirLinkTextColor) !important;
       text-decoration: var(--uirLinkTextDecoration) !important;
   }
+
+  .menuIcon1{
+    padding-bottom: 35px;
+  }
+
+.filler {
+    flex-grow:1;
+}
 
 
 /* Intro section */
@@ -534,6 +501,7 @@ hr.solid {
 #play__button {
     display: block;
     text-align: center;
+    font-family: var(--ff-second);
 }
 
 .pbutton {
@@ -546,7 +514,7 @@ hr.solid {
     margin: auto;
     margin-top: 40px;
     padding: 15px 25px;
-    font-family: var(--ff-primary);
+    font-style: var(--ff-second);
 }
 
 /* Footer */
