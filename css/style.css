@@ -584,7 +584,6 @@ hr.solid {
 }
 
 #portfolio_tag {
-    min-height: 100vh;
     display: flex;
 }
 
