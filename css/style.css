@@ -398,7 +398,8 @@ hr.solid {
 /* about me headers */
 
 .newEd__sub--about,
-.newSkills__sub--about {
+.newSkills__sub--about,
+.coursework--about {
     color: var(--clr-cambridge-blue);
     text-decoration: underline;     
     text-decoration-color: var(--clr-midnight-green-eagle-green);  
@@ -479,23 +480,30 @@ hr.solid {
     text-align: center;
 }
 
-.MrDuck__subtitle--work {
+.MrDuck__subtitle--work,
+.RMP__subtitle--work {
     color: var(--clr-cambridge-blue);
     text-align: left;
     text-decoration: underline;     
     text-decoration-color: var(--clr-midnight-green-eagle-green);  
 }
 
-.Duck__paragraph--work {
+.Duck__paragraph--work,
+.robot__paragraph--work {
     text-align: left;
 }
 
-.Duck__img {
+.Duck__img,
+.robot__img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     height: auto;
+}
+
+.robot__img {
+    width: auto;
 }
 
 #play__button {
@@ -514,7 +522,7 @@ hr.solid {
     margin: auto;
     margin-top: 40px;
     padding: 15px 25px;
-    font-style: var(--ff-second);
+    /* font-style: var(--ff-second); */
 }
 
 /* Footer */
@@ -573,4 +581,19 @@ hr.solid {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#portfolio_tag {
+    min-height: 100vh;
+    display: flex;
+}
+
+.left_portfolio {
+    width: 50vw;
+    padding: 1vw;
+}
+
+.right_portfolio {
+    width: 50vw;
+    padding: 1vw;
 }
