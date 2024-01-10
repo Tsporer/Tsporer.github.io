@@ -588,9 +588,10 @@ body {
     "duckPic playgame playgame playgame playgame"
     "divider divider divider divider divider"
     "rmp_pic rmp rmp rmp rmp"
-    "rmp_pic rmp_desc rmp_desc rmp_desc rmp_desc";
+    "rmp_pic rmp_desc rmp_desc rmp_desc rmp_desc"
+    "rmp_pic junk2 junk2 junk2 junk2";
   grid-template-columns: 15% 21.25% 21.25% 21.25% 21.25%; /* Add columns to define left and right sections */
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
   align-items: center;
   text-align: center;
   padding-bottom: 1%;
@@ -634,6 +635,8 @@ body {
 
 .pbutton {
     grid-area: playgame;
+    font-weight: 900;
+    border-radius: 20px;
     font-family: "Lato", sans-serif;
     color: var(--clr-charcoal);
     background-color: var(--clr-periwinkle);
@@ -677,8 +680,10 @@ body {
     padding-left: 3%;
     align-self: start;
     font-family: "Lato", sans-serif;
-}
-
+    padding-top: 1%;
+    /* transform: translateY(-80%); */
+  }
+  
 .robot__img {
     grid-area: rmp_pic;
 }
@@ -702,7 +707,7 @@ body {
 .dog_pics {
     display: block;
     margin: auto;
-    width: 60vw;
+    width: 30vw;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -780,7 +785,14 @@ body {
 }
 
 @media (max-width: 768px) {
-    .menu__list {
+  .Duck__paragraph--work {
+    margin-top: 20px;
+  }
+    .robot__paragraph--work {
+      margin-top: 20px;
+    }
+
+  .menu__list {
         width: 100vw;
         background-color: var(--clr-charcoal);
         display: block;
@@ -829,6 +841,10 @@ body {
         padding: 0;
     }
 
+    .RMP__subtitle--work{
+      margin-top: 50px;
+    }
+
     .MrDuck__subtitle--work {
         padding-bottom: 0vw;
     }
@@ -864,6 +880,10 @@ body {
 
     .frontend {
         padding: 0;
+    }
+
+    .dog_pics {
+        width: 60vw;
     }
 }
 

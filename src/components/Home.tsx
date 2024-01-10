@@ -174,7 +174,7 @@ function WorkSection() {
       </a>
 
       <a href="/DuckBob9.1/index.html" id="play__button" className="pbutton">
-        Play Game
+        play game
       </a>
       {/* END PORTFOLIO 1 */}
 
@@ -183,19 +183,19 @@ function WorkSection() {
       {/* Portfolio item 02 */}
       {/* START PORTFOLIO 2 */}
       <div className="ProjectTwo RMP__subtitle--work">
-        Robotic Machine Player
-      </div>
-      <div className="Robot robot__paragraph--work">
-        Worked in a group of four students to generate, analyze, and refine the
-        design of an electro-mechanical device making use of physics and
-        mathematics. The robot is capable of driving, pushing, intaking objects
-        and outputting them.
+        robotic machine player
       </div>
       <img
         src="images/robot_cropped.jpg"
         alt="Placeholder picture"
         className="robot__img"
       />
+      <div className="Robot robot__paragraph--work">
+        Worked in a group of four students to generate, analyze, and refine the
+        design of an electro-mechanical device making use of physics and
+        mathematics. The robot is capable of driving, pushing, intaking objects
+        and outputting them.
+      </div>
       {/* END PORTFOLIO 2 */}
     </section>
   );
