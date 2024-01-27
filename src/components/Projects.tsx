@@ -46,7 +46,7 @@ function DuckBob() {
         <img src="/images/websiteArtDuck.png" alt="" />
       </div>
       <div className="col-span-5 px-[0.5%] lg:pt-[1%]">
-        <div className="text-xl text-frenchgray text-left font-raleway pt-[3%] lg:pt-0 px-[12%] lg:px-0 lg:ml-[0.7%]">
+        <div className="text-xl font-black text-frenchgray text-left font-raleway pt-[3%] lg:pt-0 px-[12%] lg:px-0 lg:ml-[0.7%]">
           duckbob
         </div>
         <div className="text-frenchgray text-left font-lato pt-[1%] px-[12%] lg:px-0 lg:ml-[0.7%]">
@@ -74,7 +74,7 @@ function RMP() {
         <img src="images/robot_cropped.jpg" alt="" className="robot__img" />
       </div>
       <div className="col-span-5 px-[0.5%]">
-        <div className="text-xl text-frenchgray text-left font-raleway pt-[3%] lg:pt-0 px-[12%] lg:px-0 lg:ml-[0.7%]">
+        <div className="text-xl font-black text-frenchgray text-left font-raleway pt-[3%] lg:pt-0 px-[12%] lg:px-0 lg:ml-[0.7%]">
           robotic machine player
         </div>
 
