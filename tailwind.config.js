@@ -14,7 +14,7 @@ module.exports = {
       modblue: "#6e7dde",
       periwinkle: "#BCC3F0",
       aquamarine: "#74c991",
-      aquahue: "#74bac9",
+      aquahue: "#d5eede",
     },
     fontFamily: {
       lato: ["Lato", "sans-serif"],

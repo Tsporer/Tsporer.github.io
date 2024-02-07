@@ -61,6 +61,8 @@ function About() {
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; C++
             <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; C#
+            <br />
+            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; Scheme
           </p>
         </div>
 
