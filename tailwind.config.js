@@ -15,6 +15,7 @@ module.exports = {
       periwinkle: "#BCC3F0",
       aquamarine: "#74c991",
       aquahue: "#d5eede",
+      celeste: "B2FFFF",
     },
     fontFamily: {
       lato: ["Lato", "sans-serif"],
