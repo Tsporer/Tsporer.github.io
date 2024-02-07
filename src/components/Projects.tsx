@@ -71,11 +71,11 @@ function DuckBob() {
         </div>
         <a
           href="/DuckBob9.1/index.html"
-          className="hidden lg:inline-block items-center h-[30%] w-[25%] bg-aquamarine rounded-full 
-                      justify-center text-center block ml-[3%] m-auto mt-[2%] 
+          className="hidden lg:inline-block items-center h-[25%] w-[13%] bg-aquamarine rounded-xl 
+                      justify-center text-center block ml-[3%] my-[2%] 
                       hover:bg-gradient-to-r hover:from-aquahue hover:via-aquamarine hover:to-aquahue"
         >
-          <div className="text-color-charcoal py-[3.5%] text-2xl">
+          <div className="grid justify-items-center text-color-charcoal m-auto pb-1 items-center text-center h-full font-medium text-2xl">
             play game
           </div>
         </a>
