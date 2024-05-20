@@ -15,8 +15,7 @@ function About() {
 
           <div className="text-frenchgray text-left font-lato pt-[1%] px-[12%] lg:px-0 lg:ml-[0.7%]">
             <p>
-              Hello! I am a senior at the University of Michigan College of
-              Engineering studying Computer Science. I have a strong foundation
+              Hello! I am a Computer Science graduate from the University of Michigan. I have a strong foundation
               in various aspects of technology and I am interested in web
               development, cybersecurity, AI, and ML. I look forward to working
               in these areas, and am eager to expand my skillset.
@@ -36,13 +35,13 @@ function About() {
         <div>
           <p className="text-base align-start italic text-left pl-[12%] font-lato text-frenchgray">frontend development</p>
           <p className="text-base align-start text-left font-lato text-frenchgray pl-[12%] lg:pt-[2%]">
-            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; HTML
-            <br />
-            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; CSS
+            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; React
             <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; JavaScript
             <br />
-            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; React
+            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; HTML
+            <br />
+            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; CSS
             <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; Svelte
             <br />
@@ -55,11 +54,11 @@ function About() {
           <p className="text-base align-start text-left font-lato text-frenchgray pl-[12%] lg:pt-[2%]">
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; Python
             <br />
+            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; C++
+            <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; SQL
             <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; C<br />
-            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; C++
-            <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; C#
             <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; Scheme
@@ -70,11 +69,11 @@ function About() {
           <p className="text-base align-start italic text-left pl-[12%] pt-[5%] lg:pt-0 font-lato text-frenchgray">development tools</p>
           <p className="text-base align-start text-left font-lato text-frenchgray pl-[12%] lg:pt-[2%]">
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; version control (Git,
-            Github)
+            Azure DevOps)
             <br />
             <i className="fa-solid fa-code"></i>&nbsp; &nbsp; IDE (VS Code)
             <br />
-            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; Cloud Computing (AWS)
+            <i className="fa-solid fa-code"></i>&nbsp; &nbsp; Cloud Computing (AWS DynamoDB/EC2)
           </p>
         </div>
 
