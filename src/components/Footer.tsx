@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-charcoal items-center text-aquamarine text-center text-3xl pt-[4%] pb-[6%] lg:pb-[2%] lg:pt-[1.5%]">
+    <footer className="bg-arc_bg items-center text-aquamarine text-center text-3xl pt-[4%] pb-[6%] lg:pb-[2%] lg:pt-[1.5%]">
       <ul className="flex justify-center p-0 mr-[2.2%]">
         <li className="mx-[0.5em]">
           <a

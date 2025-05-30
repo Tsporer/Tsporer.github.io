@@ -35,8 +35,10 @@ https://coolors.co/ccc9a1-f0ffce-a53f2b-4c230a-280004 Coffee Shop */
 
   --clr-periwinkle: #BCC3F0;
   --clr-moderateblue: #6e7dde;
-    --clr-charcoal: #36454F;
-    --clr-antiflashwhite: #EEF1EF;
+  --clr-charcoal: #36454F;
+  --clr-antiflashwhite: #EEF1EF;
+
+  --clr-arc_bg: #ecf5ee;
 
   --fw-reg: 300;
   --fw-bold: 900;
@@ -73,9 +75,9 @@ body {
   /* background: var(--clr-light); */
   /* background: black; */
   /* background: #111; */
-  background: var(--clr-charcoal);
-  background-color: var(--clr-charcoal);
-  color: var(--clr-charcoal);
+  background: var(--clr-arc_bg);
+  background-color: var(--clr-arc_bg);
+  color: var(--clr-arc_bg);
   margin: 0;
   font-family: "GothamBook", sans-serif;
   font-size: var(--fs-body);

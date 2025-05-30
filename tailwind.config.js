@@ -16,11 +16,20 @@ module.exports = {
       aquamarine: "#74c991",
       aquahue: "#d5eede",
       celeste: "B2FFFF",
+
+      arc_purple: "#4e4460",
+      arc_bg: "#ecf5ee",
+      arc_greenblue: "#55a4bd",
+      arc_green: "#49866e",
+      arc_pink: '#dc9cce',
+      arc_red: '#b74866',
+      arc_blue: '#5fafd0',
+      arc_deeppurple: '#55385a'
     },
     fontFamily: {
       lato: ["Lato", "sans-serif"],
       raleway: ["Raleway", "sans-serif"],
-      gotham: ["GothamBook", "sans-serif"]
+      gotham: ["GothamBook", "sans-serif"],
     },
   },
   plugins: [require("flowbite/plugin")],
