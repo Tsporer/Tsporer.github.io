@@ -3,7 +3,7 @@ function Header() {
     <nav className="bg-charcoal text-frenchgray">
       <div className="w-full bg-charcoal flex items-center justify-between p-4 text-frenchgray">
         <div className="bg-charcoal text-xl text-center text-aquamarine block w-full lg:w-[12%]
-          items-center justify-center align-center font-raleway m-auto pt-[5%] lg:pt-[1%] lg:ml-[1%] lg:my-[1%]">
+          items-center justify-center align-center font-gotham m-auto pt-[5%] lg:pt-[1%] lg:ml-[1%] lg:my-[1%]">
           THOMAS SPORER
         </div>
         <div className="hidden md:block bg-charcoal" id="navbar-default">

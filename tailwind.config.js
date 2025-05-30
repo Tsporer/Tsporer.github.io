@@ -20,6 +20,7 @@ module.exports = {
     fontFamily: {
       lato: ["Lato", "sans-serif"],
       raleway: ["Raleway", "sans-serif"],
+      gotham: ["GothamBook", "sans-serif"]
     },
   },
   plugins: [require("flowbite/plugin")],

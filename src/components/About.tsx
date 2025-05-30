@@ -9,20 +9,23 @@ function About() {
         </div>
         <div className="col-span-5 px-[0.5%]">
           <div
-            className="text-3xl text-frenchgray text-left font-raleway
+            className="text-3xl text-frenchgray text-left font-gotham
                           pt-[3%] lg:pt-[2%] px-[12%] lg:px-0 lg:ml-[0.7%]"
           >
             ABOUT
           </div>
 
-          <div className="text-frenchgray text-left font-lato pt-[1%] px-[12%] lg:px-0 lg:ml-[0.7%]">
+          <div className="text-frenchgray text-left font-gotham pt-[1%] px-[12%] lg:px-0 lg:ml-[0.7%]">
             <p>
-              HI, I'M A DEVELOPER AT ARBELLA INSURANCE GROUP. I LIVE IN QUINCY, MA AND HAVE
-              EXPERIENCE IN BACK-END DEVELOPMENT AND DATA ANALYSIS. I GRADUATED FROM THE UNIVERSITY 
-              OF MICHIGAN, COLLEGE OF ENGINEERING IN 2024.
-
-              IN THE PAST, I WORKED AS A SOFTWARE DEVELOPMENT INTERN AT A STARTUP CALLED THE VERSE,
-              USING UNREAL ENGINE 5 TO DEVELOP AND PROTOTYPE WALKXR. 
+              HI, IM A DEVELOPER AT ARBELLA INSURANCE GROUP. I LIVE IN QUINCY,
+              MA AND HAVE EXPERIENCE IN BACK-END DEVELOPMENT AND DATA ANALYSIS.
+              I GRADUATED FROM THE UNIVERSITY OF MICHIGAN, COLLEGE OF
+              ENGINEERING IN 2024. 
+              <br />
+              <br />
+              IN THE PAST, I WORKED AS A SOFTWARE
+              DEVELOPMENT INTERN AT A STARTUP CALLED THE VERSE, USING UNREAL
+              ENGINE 5 TO DEVELOP AND PROTOTYPE WALKXR.
               <br />
             </p>
           </div>
@@ -90,7 +93,7 @@ function About() {
         </div>
         */}
 
-      <div className="text-aquamarine text-center text-raleway pt-[3%] lg:pt-[2%] text-3xl pb-[3%] lg:pb-[1%]">
+      <div className="text-aquamarine text-center font-gotham text-raleway pt-[3%] lg:pt-[2%] text-3xl pb-[3%] lg:pb-[1%]">
         RESUME
       </div>
       <Resume />

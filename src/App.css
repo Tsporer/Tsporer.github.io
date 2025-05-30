@@ -23,6 +23,7 @@ https://coolors.co/ccc9a1-f0ffce-a53f2b-4c230a-280004 Coffee Shop */
   --ff-second: "Open Sans" . sans-serif;
   --ff_raleway: "Raleway", sans-serif;
   --ff_lato: "Lato", sans-serif;
+  --ff_gotham: "GothamBook", sans-serif;
 
   --clr-rich-black: #02111B;
   --clr-jet: #292929;
@@ -76,7 +77,7 @@ body {
   background-color: var(--clr-charcoal);
   color: var(--clr-charcoal);
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-size: var(--fs-body);
   line-height: 1.6;
 }
@@ -146,7 +147,7 @@ h3 {
 .section__subtitle--about {
   background: var(--clr-charcoal);
   padding: 0.25em 1em;
-  font-family: "Raleway", sans-serif;
+  font-family: "GothamBook", sans-serif;
   margin-bottom: 1em;
 }
 
@@ -223,7 +224,7 @@ h3 {
   background-color: var(--clr-charcoal);
   /* opacity: 10%; */
   color: var(--clr-french-gray);
-  font-family: "Raleway", sans-serif;
+  font-family: "GothamBook", sans-serif;
 }
 
 .menu__link {
@@ -386,7 +387,7 @@ body {
     /* text-decoration: underline; */
     text-decoration-color: var(--clr-charcoal);
     font-size: xx-large;
-    font-family: "Raleway", sans-serif;
+    font-family: "Gotham", sans-serif;
     padding-left: 3%;
 }
 
@@ -397,7 +398,7 @@ body {
     padding-top: 0%;
     padding-bottom: 0%;
     text-align: left;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
 }
 
@@ -411,7 +412,7 @@ body {
     /* text-decoration: underline; */
     text-decoration-color: var(--clr-charcoal);
     font-size: xx-large;
-    font-family: "Raleway", sans-serif;
+    font-family: "GothamBook", sans-serif;
     padding-left: 3%;
 }
 .frontend_header {
@@ -421,7 +422,7 @@ body {
     font-style: italic;
     text-align: left;
     padding-left: 12%;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     margin-bottom: 0;
 }
@@ -432,7 +433,7 @@ body {
     font-size: medium;
     align-self: start;
     text-align: left;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     padding-left: 12%;
 }
@@ -443,7 +444,7 @@ body {
     font-style: italic;
     text-align: left;
     padding-left: 12%;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     margin-bottom: 0;
 }
@@ -454,7 +455,7 @@ body {
     font-size: medium;
     align-self: start;
     text-align: left;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     padding-left: 12%;
 }
@@ -465,7 +466,7 @@ body {
     font-style: italic;
     text-align: left;
     padding-left: 12%;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     margin-bottom: 0;
 }
@@ -476,7 +477,7 @@ body {
     font-size: medium;
     align-self: start;
     text-align: left;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     padding-left: 12%;
 }
@@ -488,7 +489,7 @@ body {
     font-style: italic;
     text-align: left;
     padding-left: 12%;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     margin-bottom: 0;
 }
@@ -499,7 +500,7 @@ body {
     font-size: medium;
     align-self: start;
     text-align: left;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-french-gray);
     padding-left: 12%;
 }
@@ -528,7 +529,7 @@ body {
 .resumeLink {
   grid-area: resume;
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-size: x-large;
   padding-bottom: 3%;
 }
@@ -604,7 +605,7 @@ body {
     color: var(--clr-french-gray);
     text-decoration-color: var(--clr-charcoal);
     font-size: xx-large;
-    font-family: "Raleway", sans-serif;
+    font-family: "GothamBook", sans-serif;
     font-weight: 900;
     padding-left: 3%;
 }
@@ -614,7 +615,7 @@ body {
     font-size: x-large;
     color: var(--clr-french-gray);
     text-align: left;
-    font-family: "Raleway", sans-serif;
+    font-family: "GothamBook", sans-serif;
     padding-left: 3%;
     align-self: start;
 }
@@ -625,7 +626,7 @@ body {
     text-align: left;
     padding-left: 3%;
     align-self: start;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
 }
 
 .Duck__img {
@@ -637,7 +638,7 @@ body {
     grid-area: playgame;
     font-weight: 900;
     border-radius: 20px;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     color: var(--clr-charcoal);
     background-color: var(--clr-periwinkle);
     width: 24%;
@@ -654,7 +655,7 @@ body {
 #play__button {
     display: block;
     text-align: center;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     font-size: x-large;
 }
 
@@ -670,7 +671,7 @@ body {
     padding-left: 3%;
     text-align: left;
     align-self: start;
-    font-family: "Raleway", sans-serif;
+    font-family: "GothamBook", sans-serif;
 }
 
 .robot__paragraph--work {
@@ -679,7 +680,7 @@ body {
     text-align: left;
     padding-left: 3%;
     align-self: start;
-    font-family: "Lato", sans-serif;
+    font-family: "GothamBook", sans-serif;
     padding-top: 1%;
     /* transform: translateY(-80%); */
   }
@@ -701,7 +702,7 @@ body {
     font-size: xx-large;
     /* padding-left: 15.6375%; */
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: "GothamBook", sans-serif;
     padding: 0;
 }
 .dog_pics {
