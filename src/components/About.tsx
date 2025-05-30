@@ -3,31 +3,33 @@ import Resume from "./Resume";
 function About() {
   return (
     <div className="block" id="home">
-      <div className="block lg:grid lg:grid-cols-6 pt-[2%] lg:pt-0 lg:px-[2%]">
+      <div className="block lg:grid lg:grid-cols-6 pt-[2%] lg:pt-0 lg:px-[25%]">
         <div className="m-auto items-center w-[75%] lg:w-[90%] lg:ml-[3%]">
           <img src="/images/seniorPicture.png" alt="" className="mt-[5%]" />
         </div>
         <div className="col-span-5 px-[0.5%]">
-          <div className="text-3xl text-frenchgray text-left font-raleway
-                          pt-[3%] lg:pt-[2%] px-[12%] lg:px-0 lg:ml-[0.7%]">
-            about
+          <div
+            className="text-3xl text-frenchgray text-left font-raleway
+                          pt-[3%] lg:pt-[2%] px-[12%] lg:px-0 lg:ml-[0.7%]"
+          >
+            ABOUT
           </div>
 
           <div className="text-frenchgray text-left font-lato pt-[1%] px-[12%] lg:px-0 lg:ml-[0.7%]">
             <p>
-              Hello! I am a Computer Science graduate from the University of Michigan. I have a strong foundation
-              in various aspects of technology and I am interested in web
-              development, cybersecurity, AI, and ML. I look forward to working
-              in these areas, and am eager to expand my skillset.
+              HI, I'M A DEVELOPER AT ARBELLA INSURANCE GROUP. I LIVE IN QUINCY, MA AND HAVE
+              EXPERIENCE IN BACK-END DEVELOPMENT AND DATA ANALYSIS. I GRADUATED FROM THE UNIVERSITY 
+              OF MICHIGAN, COLLEGE OF ENGINEERING IN 2024.
+
+              IN THE PAST, I WORKED AS A SOFTWARE DEVELOPMENT INTERN AT A STARTUP CALLED THE VERSE,
+              USING UNREAL ENGINE 5 TO DEVELOP AND PROTOTYPE WALKXR. 
               <br />
-              <br />I grew up in Morristown, NJ and my hobbies include running,
-              guitar, and playing with my two labrador retrievers, JimBob and
-              Ellie.
             </p>
           </div>
         </div>
       </div>
-
+      {/* 
+  
       <div className="text-3xl text-frenchgray text-left font-raleway
                           pt-[8%] lg:pt-[1%] px-[12%] lg:px-[19%]">skills</div>
       <div className="block lg:grid lg:grid-cols-4 pt-[2%] lg:pt-[1%] lg:pl-[16.5%]">
@@ -86,9 +88,11 @@ function About() {
           </p>
         </div>
         </div>
+        */}
 
-
-      <div className="text-aquamarine text-center text-raleway pt-[3%] lg:pt-[2%] text-3xl pb-[3%] lg:pb-[1%]">resume</div>
+      <div className="text-aquamarine text-center text-raleway pt-[3%] lg:pt-[2%] text-3xl pb-[3%] lg:pb-[1%]">
+        RESUME
+      </div>
       <Resume />
     </div>
   );

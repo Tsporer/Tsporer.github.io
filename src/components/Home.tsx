@@ -11,11 +11,12 @@ function Home() {
     <>
       <Header />
       <About />
-      <HBar />
-      <Projects />
-      <HBar />
-      <Dogs />
-      <Footer />
+      {/* <HBar /> */}
+      {/* Put discobaby and duckbob links */}
+      {/* <Projects /> */}
+      {/* <HBar /> */}
+      {/* <Dogs /> */}
+      {/* <Footer /> */}
     </>
   );
 }
