@@ -3,7 +3,7 @@ import Resume from "./Resume";
 function About() {
   return (
     <div className="block" id="home">
-      <div className="block lg:grid lg:grid-cols-6 pt-[2%] lg:pt-0 lg:px-[25%]">
+      <div className="block lg:grid lg:grid-cols-6 pt-[2%] lg:pt-0 lg:px-[30%]">
         <div className="m-auto items-center w-[75%] lg:w-[90%] lg:ml-[3%]">
           <img src="/images/seniorPicture.png" alt="" className="mt-[5%]" />
         </div>
