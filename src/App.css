@@ -1,23 +1,3 @@
-/* body{
-    background: lightblue;
-} */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Color Palletes
-https://coolors.co/fffffa-515052-000103-333138-ff312e White, Red,Black, Gray
-https://coolors.co/104f55-32746d-9ec5ab-01200f-011502 Deep  Sea  type 
-https://coolors.co/210f04-452103-690500-934b00-bb6b00 Burnt Volcano Type
-https://coolors.co/000000-cf5c36-eee5e9-7c7c7c-efc88b Black, Orange, White, Gray, Gold
-https://coolors.co/3c3744-090c9b-3066be-b4c5e4-fbfff1 Blue Shades 
-https://coolors.co/ccc9a1-f0ffce-a53f2b-4c230a-280004 Coffee Shop */
-
-/* Custom Properties */
-
 :root {
   --ff-primary: "Monsterat", sans-serif;
   --ff-second: "Open Sans" . sans-serif;
@@ -38,7 +18,19 @@ https://coolors.co/ccc9a1-f0ffce-a53f2b-4c230a-280004 Coffee Shop */
   --clr-charcoal: #36454F;
   --clr-antiflashwhite: #EEF1EF;
 
+  --clr-amaranth: #A30B37;
+  --clr-old_rose: #BD6B73;
+  --clr-periwinkle_2: #BBB6DF;
+  --clr-periwinkle_3: #C6C8EE;
+  --clr-white_2: #FCFCFF;
+
   --clr-arc_bg: #ecf5ee;
+
+  --clr-parchment: #F4E9CD;
+  --clr-ash-gray: #9DBEBB;
+  --clr-cambridge-blue: #77ACA2;
+  --clr-teal: #468189;
+  --clr-rich_black_2: #031926;
 
   --fw-reg: 300;
   --fw-bold: 900;
@@ -65,840 +57,83 @@ https://coolors.co/ccc9a1-f0ffce-a53f2b-4c230a-280004 Coffee Shop */
   }
 }
 
-/* General Styles */
-
-html {
-  scroll-behavior: smooth;
+.bottom-fill {
+  background: var(--clr-white_2);
 }
 
 body {
-  /* background: var(--clr-light); */
-  /* background: black; */
-  /* background: #111; */
-  background: var(--clr-arc_bg);
-  background-color: var(--clr-arc_bg);
+  background: var(--clr-white_2);
   color: var(--clr-arc_bg);
-  margin: 0;
   font-family: "GothamBook", sans-serif;
   font-size: var(--fs-body);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-section {
-  padding: 5em 2em;
+.main-text{
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--fw-reg);
+  color: var(--clr-teal);
+  background: var(--clr-white_2);
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-strong {
+.sub-text {
+  font-family: 'Inter', sans-serif;
   font-weight: var(--fw-bold);
+  color: var(--clr-rich_black_2);
+  background: var(--clr-white_2);
 }
 
-:focus {
-  outline: 3px solid var(--clr-charcoal);
-  outline-offset: 3px;
-}
-
-/* Buttons */
-
-.btn {
-  display: inline-block;
-  padding: 0.5em 2.5em;
-  background: var(--clr-charcoal);
-  color: var(--clr-charcoal);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
-/* typography */
-
-h1,
-h2,
-h3 {
-  line-height: 1;
-  margin: 0;
-}
-
-h1 {
-  font-size: var(--fs-h1);
-}
-h2 {
-  font-size: var(--fs-h2);
-}
-h3 {
-  font-size: var(--fs-h3);
-}
-
-.section__title {
-  margin-bottom: 0.25em;
-}
-
-/* .section__subtitle--intro, */
-.section__subtitle--about {
-  background: var(--clr-charcoal);
-  padding: 0.25em 1em;
-  font-family: "GothamBook", sans-serif;
-  margin-bottom: 1em;
-}
-
-/* .section__subtitle--intro {
-  font-family: var(--ff-second);
-} */
-
-/* header */
-
-.r-link {
-  display: var(--rLinkDisplay, inline-flex) !important;
-}
-
-.r-link[href] {
-  color: var(--rLinkColor) !important;
-  text-decoration: var(--rLinkTextDecoration, none) !important;
-}
-
-.r-list {
-  padding-left: var(--rListPaddingLeft, 0) !important;
-  margin-top: var(--rListMarginTop, 0) !important;
-  margin-bottom: var(--rListMarginBottom, 0) !important;
-  list-style: var(--rListListStyle, none) !important;
-}
-
-.menu {
-  --rLinkColor: var(--menuLinkColor, currentColor);
-}
-
-.menu__link {
-  display: var(--menuLinkDisplay, block);
-  /* opacity: 100%; */
-  color: var(--clr-french-gray);
-  background: var(--clr-charcoal);
-}
-
-/* 
-  focus state 
-  */
-
-.menu__link:focus {
-  outline: var(--menuLinkOutlineWidth, 2px) solid
-    var(--menuLinkOutlineColor, currentColor);
-  outline-offset: var(--menuLinkOutlineOffset);
-}
-
-a:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-/* 
-  fading siblings
-  */
-
-.menu:hover .menu__link:not(:hover) {
-  /* --rLinkColor: var(--menuLinkColorUnactive, rgba(22, 22, 22, 0.35)); */
-  /* --rLinkColor: var(--menuLinkColorUnactive, var(--clr-rich-black)); */
-  --rLinkColor: var(--menuLinkColorUnactive, var(--clr-outerspace));
-}
-
-/*
-  =====
-  PRESENTATION STYLES
-  =====
-  */
-
-.menu {
-  background-color: var(--menuBackgroundColor, var(--clr-charcoal));
-  /* box-shadow: var(
-    --menuBoxShadow,
-    0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 1px 2px 0 rgba(0, 0, 0, 0.24)
-  ); */
-}
-
-.menu__list {
-  display: flex;
-  background-color: var(--clr-charcoal);
-  /* opacity: 10%; */
-  color: var(--clr-french-gray);
-  font-family: "GothamBook", sans-serif;
-}
-
-.menu__link {
-  padding: var(--menuLinkPadding, 1.5rem 2.5rem);
-  font-weight: 700;
-  text-transform: lowercase;
-}
-
-/* 
-  =====
-  TEXT UNDERLINED
-  =====
-  */
-
-.text-underlined {
-  position: relative;
-  overflow: hidden;
-
-  will-change: color;
-  transition: color 0.25s ease-out;
-}
-
-.text-underlined::before,
-.text-underlined::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background-color: var(--textUnderlinedLineColor, currentColor);
-
-  will-change: width;
-  transition: width 0.1s ease-out;
-
-  position: absolute;
-  bottom: 0;
-}
-
-.text-underlined::before {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.text-underlined::after {
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.text-underlined:hover::before,
-.text-underlined:hover::after {
-  width: 100%;
-  transition-duration: 0.2s;
-}
-
-/*
-  =====
-  SETTINGS
-  =====
-  */
-
-.page__custom-settings {
-  --menuBackgroundColor: #6c5ce7;
-  --menuLinkColor: #fff;
-  --menuLinkColorUnactive: #241c69;
-  --menuLinkOutlineOffset: -0.5rem;
-}
-
-/*
-  =====
-  DEMO
-  =====
-  */
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,
-    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.page {
-  box-sizing: border-box;
-  max-width: 640px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  margin: auto;
-}
-
-.page__menu:nth-child(n + 2) {
-  margin-top: 3rem;
-}
-
-.substack {
-  border: 1px solid #eee;
-  background-color: var(--clr-charcoal);
-  width: 100%;
-  max-width: 480px;
-  height: 280px;
-  margin: 1rem auto;
-}
-
-.r-link {
-  --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-  --uirLinkTextColor: var(--rLinkTextColor);
-  --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
-
-  display: var(--uirLinkDisplay) !important;
-  color: var(--uirLinkTextColor) !important;
-  text-decoration: var(--uirLinkTextDecoration) !important;
-}
-
-.menuIcon1 {
-  padding-bottom: 35px;
-}
-
-.filler {
-  flex-grow: 1;
-  background-color: var(--clr-charcoal);
-}
-
-.menu__group__name {
-    color: var(--clr-periwinkle);
-}
-
-/* Intro section */
-
-.intro {
-  position: relative;
-  /* background-color: var(--clr-french-gray); */
-  background-color: var(--clr-charcoal);
-  display: grid;
-  grid-template-areas:
-    "title about about about about"
-    "title about_sub about_sub about_sub about_sub"
-    "junk1 skills skills skills skills"
-    "junk1 skills_1_h skills_2_h skills_3_h skills_4_h"
-    "junk1 skills_1 skills_2 skills_3 skills_4"
-    "resume resume resume resume resume";
-  grid-template-columns: 15% 21.25% 21.25% 21.25% 21.25%; /* Add columns to define left and right sections */
-  grid-template-rows: auto auto auto auto auto auto;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 1%;
-}
-
-.intro__img {
-  grid-area: title;
-  /* box-shadow: var(--bs); */
-  width: 100%;
-  margin-top: 5%;
-  align-self: start;
-}
-
-/* START ABOUT ME */
-
-.aboutme--header {
-    grid-area: about;
-    text-align: left;
-    color: var(--clr-french-gray);
-    /* text-decoration: underline; */
-    text-decoration-color: var(--clr-charcoal);
-    font-size: xx-large;
-    font-family: "Gotham", sans-serif;
-    padding-left: 3%;
-}
-
-.about_paragraph {
-    align-self: start;
-    grid-area: about_sub;
-    padding: 3%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    text-align: left;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-}
-
-/* END ABOUT ME */
-
-/* START SKILLS */
-.skills--header {
-    grid-area: skills;
-    text-align: left;
-    color: var(--clr-french-gray);
-    /* text-decoration: underline; */
-    text-decoration-color: var(--clr-charcoal);
-    font-size: xx-large;
-    font-family: "GothamBook", sans-serif;
-    padding-left: 3%;
-}
-.frontend_header {
-    grid-area: skills_1_h;
-    font-size: medium;
-    align-self: start;
-    font-style: italic;
-    text-align: left;
-    padding-left: 12%;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    margin-bottom: 0;
-}
-
-.frontend {
-    grid-area: skills_1;
-    margin-top: 0;
-    font-size: medium;
-    align-self: start;
-    text-align: left;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    padding-left: 12%;
-}
-.backend_header {
-    grid-area: skills_2_h;
-    font-size: medium;
-    align-self: start;
-    font-style: italic;
-    text-align: left;
-    padding-left: 12%;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    margin-bottom: 0;
-}
-
-.backend {
-    grid-area: skills_2;
-    margin-top: 0;
-    font-size: medium;
-    align-self: start;
-    text-align: left;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    padding-left: 12%;
-}
-.tools_header {
-    grid-area: skills_3_h;
-    font-size: medium;
-    align-self: start;
-    font-style: italic;
-    text-align: left;
-    padding-left: 12%;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    margin-bottom: 0;
-}
-
-.tools {
-    grid-area: skills_3;
-    margin-top: 0;
-    font-size: medium;
-    align-self: start;
-    text-align: left;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    padding-left: 12%;
-}
-
-.gamedev_header {
-    grid-area: skills_4_h;
-    font-size: medium;
-    align-self: start;
-    font-style: italic;
-    text-align: left;
-    padding-left: 12%;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    margin-bottom: 0;
-}
-
-.gamedev {
-    grid-area: skills_4;
-    margin-top: 0;
-    font-size: medium;
-    align-self: start;
-    text-align: left;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-french-gray);
-    padding-left: 12%;
-}
-/* END SKILLS */
-
-/* START RESUME */
-
-.resumeLink {
-    grid-area: resume;
-    color: var(--clr-periwinkle);
-    text-align: center;
-    font-family: ("Raleway", sans-serif);
-    font-size: x-large;
-    padding-bottom: 3%;
-}
-
-#resumeIconItem {
-    grid-area: resume;
-    color: var(--clr-periwinkle);
-    position: relative;
-    /* top: 1px; */
-    align-items: center;
-    justify-content: center;
-    padding-top: 4%;
-}
-.resumeLink {
-  grid-area: resume;
-  text-align: center;
-  font-family: "GothamBook", sans-serif;
-  font-size: x-large;
-  padding-bottom: 3%;
-}
-
-.resumeLink p {
-  color: var(--clr-periwinkle);
-  display: inline; /* Display the text inline with the icon */
-  margin-right: 10px; /* Add some spacing between the text and the icon */
-}
-
-#resumeIconItem {
-  color: var(--clr-periwinkle);
-  text-decoration: none; /* Remove underline from the icon */
-}
-
-#resumeIconItem i {
-  font-size: 1.98em;
-}
-
-#resumeIconItem:hover {
-  text-decoration: underline; /* Add underline on hover for the icon */
-}
-/* END RESUME */
-
-/* START BAR DIVIDER */
-.bar_container, .bar_container_2 {
-  display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  height: 1px; /* Set the height of the container (adjust as needed) */
-  background-color: var(--clr-charcoal);
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.bar_divider {
-  width: 66%;
-  height: 0.75px;
-  background-color: var(--clr-periwinkle);
-  padding: 0;
-  margin: 0;
-}
-/* END BAR DIVIDER */
-
-/* START PROJECTS */
-.my-work {
-  position: relative;
-  /* background-color: var(--clr-french-gray); */
-  background-color: var(--clr-charcoal);
-  display: grid;
-  grid-template-areas:
-    "junk proj proj proj proj"
-    "junk junk1 junk1 junk1 junk1"
-    "duckPic duck_bob duck_bob duck_bob duck_bob"
-    "duckPic duckDesc duckDesc duckDesc duckDesc"
-    "duckPic playgame playgame playgame playgame"
-    "divider divider divider divider divider"
-    "rmp_pic rmp rmp rmp rmp"
-    "rmp_pic rmp_desc rmp_desc rmp_desc rmp_desc"
-    "rmp_pic junk2 junk2 junk2 junk2";
-  grid-template-columns: 15% 21.25% 21.25% 21.25% 21.25%; /* Add columns to define left and right sections */
-  grid-template-rows: auto auto auto auto auto auto auto auto;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 1%;
-  padding-top: 2%;
-}
-
-.section__title--work {
-    grid-area: proj;
-    text-align: left;
-    color: var(--clr-french-gray);
-    text-decoration-color: var(--clr-charcoal);
-    font-size: xx-large;
-    font-family: "GothamBook", sans-serif;
-    font-weight: 900;
-    padding-left: 3%;
-}
-
-.MrDuck__subtitle--work {
-    grid-area: duck_bob;
-    font-size: x-large;
-    color: var(--clr-french-gray);
-    text-align: left;
-    font-family: "GothamBook", sans-serif;
-    padding-left: 3%;
-    align-self: start;
-}
-
-.Duck__paragraph--work {
-    grid-area: duckDesc;
-    color: var(--clr-french-gray);
-    text-align: left;
-    padding-left: 3%;
-    align-self: start;
-    font-family: "GothamBook", sans-serif;
-}
-
-.Duck__img {
-    grid-area: duckPic;
-}
-
-
-.pbutton {
-    grid-area: playgame;
-    font-weight: 900;
-    border-radius: 20px;
-    font-family: "GothamBook", sans-serif;
-    color: var(--clr-charcoal);
-    background-color: var(--clr-periwinkle);
-    width: 24%;
-    text-decoration: none;
-    text-align: left;
-    align-items: left;
-    display: block;
-    margin: auto;
-    margin-left: 3%;
-    /* margin-top: 40px; */
-    padding: 15px 25px;
-}
-
-#play__button {
-    display: block;
-    text-align: center;
-    font-family: "GothamBook", sans-serif;
-    font-size: x-large;
-}
-
-.proj_divider {
-    grid-area: divider;
-    height: 60px;
-}
-
-.RMP__subtitle--work {
-    grid-area: rmp;
-    font-size: x-large;
-    color: var(--clr-french-gray);
-    padding-left: 3%;
-    text-align: left;
-    align-self: start;
-    font-family: "GothamBook", sans-serif;
-}
-
-.robot__paragraph--work {
-    grid-area: rmp_desc;
-    color: var(--clr-french-gray);
-    text-align: left;
-    padding-left: 3%;
-    align-self: start;
-    font-family: "GothamBook", sans-serif;
-    padding-top: 1%;
-    /* transform: translateY(-80%); */
-  }
-  
-.robot__img {
-    grid-area: rmp_pic;
-}
-
-/* END PROJECTS */
-
-/* START ELLIE & JIMBOB */
-.bar_container_2 {
-    height: 5px;
-    margin-top: 4vw;
-}
-.dogs_title {
-    display: block;
-    color: var(--clr-french-gray);
-    font-size: xx-large;
-    /* padding-left: 15.6375%; */
-    text-align: center;
-    font-family: "GothamBook", sans-serif;
-    padding: 0;
-}
-.dog_pics {
-    display: block;
-    margin: auto;
-    width: 30vw;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-/* END ELLIE & JIMBOB */
-
-/* START FOOTER */
-
-.footer {
-  background: var(--clr-charcoal);
-  color: var(--clr-periwinkle);
-  text-align: center;
-  padding: 0.1em 0;
-  font-size: var(--fs-h3);
-}
-
-.footer__link {
-  font-weight: var(--fw-bold);
-}
-
-.footer a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.footer__link:hover,
-.social-list__link:hover {
-  opacity: 0.7;
-}
-
-.footer__link:hover {
+.hlink {
+  font-family: 'Inter', sans-serif;
+  color: var(--clr-teal);
   text-decoration: underline;
+  display: inline-block;
 }
 
-.social-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 2em 0;
-  padding: 0;
+.hlink:hover {
+  color: var(--clr-parchment);
 }
 
-.social-list__item {
-  margin: 0 0.5em;
+.footer-a {
+  padding: 10px;
+  transition: all 300ms ease-in-out;
 }
 
-.social-list__link {
-  padding: 0.5em;
+.footer-a:hover {
+  color: var(--clr-parchment);
 }
 
-.portfolio-item-individual {
-  padding: 0 2em 2em;
-  max-width: 1000px;
-  margin: 0 auto;
+.footer-span {
+  padding: 16px 16px;
+  background-position: bottom;
+  background-image: linear-gradient(to right, var(--clr-parchment), var(--clr-parchment));
+  background-size: 0% 0px;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-out;
+  width: 3rem;
+  height: 3rem;
 }
 
-.portfolio-item-individual p {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.footer-span:hover {
+  background-size: 70% 3px;
 }
 
-#portfolio_tag {
-  display: flex;
-}
-
-.left_portfolio {
-    width: 50vw;
-    padding: 1vw;
-}
-
-.right_portfolio {
-    width: 50vw;
-    padding: 1vw;
-}
-
-@media (max-width: 768px) {
-  .Duck__paragraph--work {
-    margin-top: 20px;
+@media (max-width: 600px) {
+  .li-a {
+    margin-top: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
-    .robot__paragraph--work {
-      margin-top: 20px;
-    }
-
-  .menu__list {
-        width: 100vw;
-        background-color: var(--clr-charcoal);
-        display: block;
-    }
-
-    .menu__group:not(.menu__group__nameli) {
-        display: none;
-    }
-
-    .menu__group__nameli {
-        text-align: center;
-        font-size: x-large;
-        padding-bottom: 0;
-        margin-top: 5vw;
-    }
-
-    .body {
-        overflow-x: hidden;
-    }
-
-    .r-link {
-        display: none;
-    }
-
-    .intro {
-        display: block;
-        padding-top: 0;
-    }
-
-    .aboutme--header, .about_paragraph, .skills--header, .frontend, .frontend_header,
-    .backend, .backend_header, .gamedev, .gamedev_header, .tools_header, .tools
-    , .resumeLink, #resumeIconItem, .bar_container, .bar_divider, .bar_container_2 {
-        padding: 0;
-    }
-
-    .bar_container, .bar_container_2 {
-        margin-top: 8vw;
-    }
-
-    .my-work {
-        display: block;
-    }
-
-    .section__title--work, .MrDuck__subtitle--work, .Duck__paragraph--work, .Duck__img,
-    .RMP__subtitle--work, .robot__paragraph--work {
-        padding: 0;
-    }
-
-    .RMP__subtitle--work{
-      margin-top: 50px;
-    }
-
-    .MrDuck__subtitle--work {
-        padding-bottom: 0vw;
-    }
-
-    .pbutton {
-        align-items: center;
-        width: 75%;
-        text-align: center;
-        justify-content: center;
-        display: none;
-    }
-    
-    #play__button {
-        display: none;
-        align-items: center;
-        margin: 0;
-        /* padding: 0; */
-        width: 75%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .aboutme--header {
-        /* text-align: center; */
-        padding-top: 8vw;
-    }
-
-    .proj_divider {
-        height: 0vw;
-    }
-
-    .frontend {
-        padding: 0;
-    }
-
-    .dog_pics {
-        width: 60vw;
-    }
 }
 
-/* DISCOBABY */
-.Discobaby__container {
-    color: var(--clr-french-gray);
+.duck-icon {
+  background: url("../public/ducky.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-color: white;
+  color:white;
+  width: 48px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  fill: black;
 }
-
-.LinkToDiscobaby {
-    color: var(--clr-french-gray);
-}
-/* END DISCOBABY */

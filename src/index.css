@@ -22,3 +22,10 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter/static/Inter_18pt-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

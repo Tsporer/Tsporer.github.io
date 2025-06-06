@@ -1,26 +1,44 @@
 function Footer() {
   return (
-    <footer className="bg-arc_bg items-center text-aquamarine text-center text-3xl pt-[4%] pb-[6%] lg:pb-[2%] lg:pt-[1.5%]">
-      <ul className="flex justify-center p-0 mr-[2.2%]">
-        <li className="mx-[0.5em]">
-          <a
-            className="hover:opacity-70 p-[0.5em]"
-            href="https://www.linkedin.com/in/thomas-sporer-29aba5210/"
+    <footer className="main-text items-center text-center text-5xl">
+      <div
+        className="block lg:flex justify-center main-text mx-auto mt-[2%]"
+        id="navbar-default"
+      >
+        <ul className="font-medium flex justify-center ease-in-out text-center main-text">
+          <li className="li-a">
+            <a
+              href="https://www.linkedin.com/in/thomas-sporer-29aba5210/"
+              className="footer-a"
             >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li className="mx-[0.5em]">
-          <a className="hover:opacity-70 p-[0.5em]" href="https://github.com/Tsporer">
-            <i className="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li className="mx-[0.5em]">
-          <a className="hover:opacity-70 p-[0.5em]" href="mailto:tsporer10@gmail.com">
-            <i className="fa-solid fa-envelope"></i>
-          </a>
-        </li>
-      </ul>
+              <span className="footer-span">
+                <i className="fa-brands fa-linkedin"></i>
+              </span>
+            </a>
+          </li>
+          <li className="li-a">
+            <a href="https://github.com/Tsporer" className="footer-a">
+              <span className="footer-span">
+                <i className="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </li>
+          <li className="li-a">
+            <a href="mailto:tsporer10@gmail.com" className="footer-a">
+              <span className="footer-span justify-center">
+                <i className="fa-solid fa-envelope"></i>
+              </span>
+            </a>
+          </li>
+          <li className="hidden lg:block">
+            <a href="/DuckBob9.1/index.html" className="footer-a">
+              <span className="footer-span justify-center">
+                <i className="fa-solid fa-dove"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 }
