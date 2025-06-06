@@ -3,21 +3,68 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Unity WebGL Player | DuckBob</title>
-        <link rel="shortcut icon" href="TemplateData/favicon.ico">
+        <title>tsporer | DuckBob</title>
+        <link rel="shortcut icon" href="TemplateData/websiteArtDuck.png">
         <link rel="stylesheet" href="TemplateData/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Teachers&display=swap" rel="stylesheet">        <style>
+            body {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #468189;
+            }
+
+            #unity-container {
+                width: 80%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #ccc; /* Optional border */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+                z-index: 1; /* Ensure it is behind other elements */
+                position: relative; /* Ensure proper stacking context */
+            }
+
+            .duckbob-title {
+                display: flex;
+                text-align: center;
+                font-size: 2.5rem;
+                font-family: "Press Start 2P", system-ui;;
+                color: #F4E9CD;
+                z-index: 2;
+                position: absolute; /* Separate it from the flow */
+                top: 15px; /* Adjust position as needed */
+                left: 49.75%;
+                transform: translateX(-50%);
+            }
+
+            canvas {
+                width: 100%;
+                height: 100%;
+            }
+            
+        </style>
     </head>
     <body>
-        <div id="unity-container" style="width: 100%; height: 100%;">
-        <canvas id="unity-canvas" width=auto height=auto></canvas>
-        <div id="unity-loading-bar">
-            <div id="unity-logo"></div>
-            <div id="unity-progress-bar-empty">
-            <div id="unity-progress-bar-full"></div>
-            </div>
-        </div>
-        <div id="unity-warning"> </div>
-        </div>
+          <div class="duckbob-title">
+            DUCKBOB
+          </div>
+          <div id="unity-container" style="width: 90%; height: 85%; margin-top: 20px;">
+          <canvas id="unity-canvas" width=auto height=auto></canvas>
+          <div id="unity-loading-bar">
+              <div id="unity-logo"></div>
+              <div id="unity-progress-bar-empty">
+              <div id="unity-progress-bar-full"></div>
+              </div>
+          </div>
+          <div id="unity-warning"> </div>
+          </div>
         
         <script>
         var container = document.querySelector("#unity-container");
@@ -108,5 +155,6 @@
         };
         document.body.appendChild(script);
         </script>
+        <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     </body>
     </html>
