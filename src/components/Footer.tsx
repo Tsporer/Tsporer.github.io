@@ -24,7 +24,7 @@ function Footer() {
             </a>
           </li>
           <li className="li-a">
-            <a href="mailto:tsporer10@gmail.com" className="footer-a">
+            <a href="mailto:tsporer@umich.edu" className="footer-a">
               <span className="footer-span justify-center">
                 <i className="fa-solid fa-envelope"></i>
               </span>
