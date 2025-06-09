@@ -125,15 +125,3 @@ body {
     padding-right: 3%;
   }
 }
-
-.duck-icon {
-  background: url("../public/ducky.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  background-color: white;
-  color:white;
-  width: 48px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
-  fill: black;
-}
