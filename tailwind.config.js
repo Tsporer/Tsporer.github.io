@@ -24,7 +24,13 @@ module.exports = {
       arc_pink: '#dc9cce',
       arc_red: '#b74866',
       arc_blue: '#5fafd0',
-      arc_deeppurple: '#55385a'
+      arc_deeppurple: '#55385a',
+
+      amaranth: '#A30B37', 
+      old_rose: '#BD6B73', 
+      periwinkle_2: '#BBB6DF', 
+      periwinkle_3: '#C6C8EE', 
+      white_2: '#FCFCFF'
     },
     fontFamily: {
       lato: ["Lato", "sans-serif"],
