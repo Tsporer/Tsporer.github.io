@@ -26,7 +26,8 @@
 
   --clr-arc_bg: #ecf5ee;
 
-  --clr-parchment: #F4E9CD;
+  /* --clr-parchment: #F4E9CD; */
+  --clr-parchment: #031926;
   --clr-ash-gray: #9DBEBB;
   --clr-cambridge-blue: #77ACA2;
   --clr-teal: #468189;
@@ -116,6 +117,24 @@ body {
 
 .footer-span:hover {
   background-size: 70% 3px;
+}
+
+.resume-text {
+  padding: 4px 4px;
+  padding-bottom: 0px;
+  color: var(--clr-teal);
+  font-family: 'Inter', sans-serif;
+  background-position: bottom;
+  background-image: linear-gradient(to right, var(--clr-parchment), var(--clr-parchment));
+  background-size: 0% 0px;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-out;
+  display: inline-block;
+}
+
+.resume-text:hover {
+  background-size: 100% 3px;
+  color: var(--clr-parchment);
 }
 
 @media (max-width: 600px) {

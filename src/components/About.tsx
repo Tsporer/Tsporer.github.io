@@ -2,7 +2,7 @@ import Resume from "./Resume";
 
 function About() {
   return (
-    <div className="flex-grow main-text mx-auto lg:pt-0 lg:px-[3%] mt-[2%]">
+    <div className="flex-grow main-text mx-auto lg:pt-0 lg:px-[3%] mt-[1%]">
       <div className="text-left w-[72%] sub-text mx-auto">
         I'm 
         a developer at{" "}
