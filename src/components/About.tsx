@@ -1,5 +1,3 @@
-import Resume from "./Resume";
-
 function About() {
   return (
     <div className="flex-grow main-text mx-auto lg:pt-0 lg:px-[3%] mt-[1%]">

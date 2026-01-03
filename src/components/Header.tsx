@@ -9,15 +9,6 @@ function Header() {
       <div className="main-text text-center text-2xl lg:text-7xl">
         Hi, I'm Thomas Sporer
       </div>
-      <div className="flex justify-center mt-4">
-        <a
-          href="/resume.pdf"
-          className="text-2xl resume-text"
-          download
-        >
-          Resume
-        </a>
-      </div>
     </div>
   );
 }
