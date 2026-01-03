@@ -2,8 +2,7 @@ function About() {
   return (
     <div className="flex-grow main-text mx-auto lg:pt-0 lg:px-[3%] mt-[1%]">
       <div className="text-left w-[72%] sub-text mx-auto">
-        I'm 
-        a developer at{" "}
+        I'm a developer at{" "}
         <a
           href="https://www.arbella.com"
           className="hlink"
@@ -29,7 +28,7 @@ function About() {
         </a>
         , using Unreal Engine 5 to develop and prototype{" "}
         <a
-          href="https://versebuilding.com/experiences/game/walk-xr"
+          href="https://www.versebuilding.com/games/walkxr"
           className="hlink"
           target="_blank"
           rel="noopener noreferrer"
